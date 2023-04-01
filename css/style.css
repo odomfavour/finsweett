@@ -49,24 +49,23 @@ h2 {
   width: 60%;
   /* padding-left: 10px; */
 }
-
-.orange-btn {
-  background: #ff6433;
+.btn {
   border-radius: 12px;
   padding: 16px 40px;
   color: white;
   border: none;
   cursor: pointer;
 }
+.orange-btn {
+  background: #ff6433;
+}
+.btn-dark {
+  background: #1e1b1b;
+}
 .width-50 {
   width: 50%;
 }
 
-.arrow-btn {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
 /* Header section */
 .hamburger {
   display: none;
@@ -168,6 +167,11 @@ h2 {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.arrow-btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
 /* Get Quote section */
 .getQuote-section {
   padding: 90px 0;
@@ -240,6 +244,30 @@ h2 {
   margin-top: 15px;
 }
 
+/*  Query Section*/
+.query-flex {
+  display: flex;
+}
+.query-section .left-section {
+  background: url(../images/query-bg.png) no-repeat top 0 left 0 / cover;
+}
+.query-section .right-section {
+  background: url(../images/query-bg2.png) no-repeat top 0 left 0 / cover;
+  width: 100%;
+  min-height: 100%;
+}
+.query-text {
+  background: #ff6433;
+  color: white;
+  padding: 80px;
+  position: relative;
+  right: -200px;
+  width: 90%;
+}
+.query-text h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
 /* tablet view */
 
 @media (max-width: 769px) {
