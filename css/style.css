@@ -178,7 +178,7 @@ h3 {
   gap: 10px;
   margin-top: 15px;
 }
-/* Get Quote section */
+/*  Quote  Help section */
 .quoteHelp-section {
   padding: 90px 0;
 }
@@ -310,7 +310,7 @@ h3 {
 .testimonial .testimonial-heading {
   text-align: center;
   width: 50%;
-  margin: 0 auto 100px auto ;
+  margin: 0 auto 100px auto;
 }
 
 .testimonial-flex {
@@ -333,7 +333,6 @@ h3 {
 .person-info h5 {
   font-size: 20px;
   font-weight: 600;
-
 }
 
 .directions {
@@ -342,7 +341,8 @@ h3 {
   margin-top: 30px;
 }
 
-.directions .prev-control, .directions .next-control {
+.directions .prev-control,
+.directions .next-control {
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -354,7 +354,6 @@ h3 {
   color: black;
   height: 48px;
   width: 48px;
-
 }
 
 .directions .next-control {
@@ -375,18 +374,21 @@ h3 {
   background: rgb(225, 230, 232);
 }
 
-
 .faq-section .faq-container {
   width: 50%;
   margin: 0 auto;
 }
 
+.faq-section h3 {
+  text-align: center;
+  width: 62%;
+  margin: 0 auto 30px auto;
+}
 .faq-container .faq-card {
   background: white;
   padding: 40px;
   margin-bottom: 20px;
 }
-
 
 .faq-card .faq-header {
   display: flex;
@@ -405,7 +407,7 @@ h3 {
   justify-content: center;
   align-items: center;
   display: flex;
-  background: #FF6433;
+  background: #ff6433;
   color: white;
 }
 
@@ -420,6 +422,11 @@ footer .footer-top {
 
 .footer-top .left-section h3 {
   width: 60%;
+  margin-bottom: 30px;
+}
+.footer-top .left-section i {
+  margin-right: 10px;
+  font-size: 24px;
 }
 .footer-top .right-section li {
   margin-bottom: 15px;
@@ -433,12 +440,10 @@ footer .footer-top {
   font-size: 20px;
 }
 
-
 footer .footer-bottom {
   background: black;
   color: white;
-  
-} 
+}
 
 .footer-top-flex {
   display: flex;
@@ -466,38 +471,209 @@ footer .footer-bottom {
 /* tablet view */
 
 @media (max-width: 769px) {
-  .left-section h2 {
-    font-size: 32px;
+  p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 40px;
     line-height: 42px;
+    font-weight: 700;
+
     width: 90%;
   }
-
+  h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  /* Header Section */
+  .header-content {
+    flex-direction: column;
+  }
+  /* Hero section */
   .hero-flex .bottom-image,
   .hero-flex .top-image {
     display: none;
+  }
+  .hero-section {
+    min-height: 90vh;
+    padding: 70px 0 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Gray Section */
+  .gray-section .right-section {
+    align-self: center;
+  }
+  /*Quote Help Section  */
+
+  .line-icon {
+    min-height: 80px;
+  }
+  /* Testimonial section */
+  .testimonial .testimonial-heading {
+    width: 60%;
+    margin: 0 auto 70px auto;
+  }
+  .testimonial-flex .testimonial-card {
+    padding: 45px;
+  }
+  .person-info h5 {
+    font-size: 18px;
+  }
+  .person-info p {
+    font-size: 15px;
+  }
+  .directions .next-control {
+    height: 55px;
+    width: 55px;
+  }
+  /* FAQ Section */
+  .faq-section .faq-container {
+    width: 65%;
+  }
+
+  .faq-container .faq-card {
+    padding: 30px;
+  }
+  /* Footer */
+  .footer-top .right-section li h5 {
+    font-size: 18px;
+  }
+  .footer-bottom ul li,
+  .footer-bottom p {
+    font-size: 14px;
   }
 }
 /* mobile view  */
 
 @media (max-width: 426px) {
+  h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0 auto 34px auto;
+    width: 100%;
+  }
+  .width-50 {
+    width: 100%;
+  }
+  /* Header Section */
+  .header-content {
+    flex-direction: row;
+  }
   .hamburger {
+    font-size: 30px;
     display: block;
   }
 
   .links-section {
     display: none;
   }
-
+  /* Hero Section */
   .hero-section {
     padding: 50px 0;
   }
-
-  .hero-flex {
+  .hero-section .hero-flex {
     flex-direction: column-reverse;
     gap: 30px;
   }
-
-  .width-50 {
+  .hero-section .orange-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  /* gray section */
+  .gray-section {
+    padding: 70px 0;
+  }
+  .grey-flex {
+    flex-direction: column;
+  }
+  .gray-section .left-section {
+    margin-bottom: 30px;
+  }
+  .list-iconText-flex li .icon-text {
+    width: 80%;
+    /* padding-left: 10px; */
+  }
+  /* quote help section */
+  .quoteHelp-flex {
+    flex-direction: column;
+  }
+  .quoteHelp-section .left-section,
+  .quoteHelp-section .left-section p {
     width: 100%;
+    padding-bottom: 25px;
+  }
+  .quoteHelp-section .list-iconText-flex li {
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+  .quoteHelp-section .right-section {
+    padding-top: 10px;
+  }
+  /* what we offer */
+  .whatWeOffer-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .whatWeOffer-boxes .box {
+    padding: 50px 0;
+    text-align: center;
+  }
+  /* query section */
+  .query-section .left-section {
+    width: 70%;
+  }
+  .query-section .right-section {
+    width: 30%;
+  }
+  .query-text {
+    padding: 25px;
+    right: 0px;
+    width: 100%;
+  }
+  /* rating */
+  .rating {
+    padding: 30px 0;
+  }
+  .rating-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    text-align: center;
+  }
+  /* brand we serve */
+
+  .brands {
+    padding: 60px 0;
+  }
+  .brands-img-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  /* testimonial  */
+  .testimonial {
+    padding: 70px 0;
+  }
+  .testimonial .testimonial-heading {
+    width: 100%;
+    margin: 0 auto 50px auto;
+  }
+  .testimonial-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonial-flex .testimonial-card {
+    padding: 35px;
+  }
+  /* FAQ Section */
+  .faq-section {
+    padding: 70px 0;
+  }
+
+  .faq-section .faq-container,
+  .faq-card .faq-answer p,
+  .faq-section h3 {
+    width: 100%;
+  }
+  .faq-container .faq-card {
+    padding: 20px;
   }
 }
