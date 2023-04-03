@@ -1,8 +1,13 @@
 /* Hero section */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 h1 {
   font-weight: 800;
   font-size: 64px;
-  line-height: 84px;
+  line-height: 70px;
   color: #f2f2f2;
   margin-bottom: 16px;
 }
@@ -10,31 +15,29 @@ p {
   font-weight: 600;
   font-size: 18px;
   line-height: 175%;
+  margin-bottom: 30px;
+}
+.service-flex {
+  display: flex;
 }
 
 /* service Hero section */
-.service-hero-section {
+.service__hero-section {
   padding: 80px 0;
 }
-.service-hero-section p {
-  margin-bottom: 40px;
-  color: #f2f2f2;
-}
-.service__hero-section img {
-  object-fit: cover;
-  height: 100%;
-}
-.service-flex-container {
-  display: flex;
-}
 .service__hero-section .left-section {
-  width: 40%;
+  width: 30%;
+}
+.service__hero-section .left-section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .service__hero-section .right-section {
-  width: 60%;
-  padding: 96px;
   background: #1e1b1b;
   color: #fff;
+  width: 70%;
+  padding: 70px;
 }
 
 /* service detail section */
@@ -78,7 +81,7 @@ p {
   width: 95%;
   font-size: 35px;
 }
-.work-flow .service-flex-container {
+.work-flow .service-flex {
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
@@ -87,7 +90,7 @@ p {
 .work-flow .right-section {
   width: 50%;
 }
-.bottom-section .service-flex-container {
+.bottom-section .service-flex {
   flex-direction: row-reverse;
 }
 .bottom-section {
@@ -95,4 +98,49 @@ p {
 }
 .bottom-section .left-section {
   padding-left: 20px;
+}
+/* Media query */
+@media (max-width: 769px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .work-flow .top-section .right-section .middle-section,
+  .work-flow .bottom-section .right-section .middle-section {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 54px;
+    line-height: 60px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .service-flex,
+  .bottom-section .service-flex {
+    flex-direction: column;
+  }
+  .service__hero-section .right-section {
+    width: 100%;
+    padding: 50px;
+  }
+  .service__hero-section .left-section {
+    display: none;
+  }
+  .service-grid {
+    gap: 10px;
+  }
+  .work-flow .left-section,
+  .work-flow .right-section {
+    width: 100%;
+  }
+  .work-flow .right-section .last-section {
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
