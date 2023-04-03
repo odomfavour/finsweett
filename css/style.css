@@ -425,7 +425,11 @@ h3 {
 .faq-card .faq-answer p {
   width: 80%;
 }
+/* footer */
 
+footer p {
+  margin-bottom: 0;
+}
 footer .footer-top {
   background: #1e1b1be0;
   padding: 40px 0;
@@ -579,9 +583,7 @@ footer .footer-bottom {
   .footer-top .right-section li h5 {
     font-size: 18px;
   }
-  footer p {
-    margin-bottom: 0;
-  }
+
   .footer-bottom ul li,
   .footer-bottom p {
     font-size: 14px;
