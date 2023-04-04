@@ -161,13 +161,6 @@ p {
   }
 }
 @media (max-width: 650px) {
-  h1 {
-    font-size: 54px;
-    line-height: 60px;
-  }
-  p {
-    font-size: 20px;
-  }
   .service-flex,
   .bottom-section .service-flex {
     flex-direction: column;
