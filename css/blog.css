@@ -8,7 +8,8 @@
   margin-top: 10px;
 }
 .min-blog-section img,
-.full-blog-section img {
+.full-blog-section img,
+.blog-detail img {
   width: 100%;
 }
 /* Hero section */
@@ -93,6 +94,30 @@
 .full-blog-section .blog-grid h5 {
   font-size: 25px;
   margin: 16px 0;
+}
+
+/* Blog Details Page */
+.blog-detail {
+  padding: 30px 0 50px 0;
+}
+.blog-detail h5 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.full-detail p,
+.blog-title p:last-child {
+  margin-bottom: 30px;
+}
+.img-card {
+  margin-bottom: 40px;
+}
+.left-pd {
+  padding-left: 20px;
+  border-left: 2px solid #1e1b1b;
 }
 /* Media Query */
 @media (max-width: 770px) {
