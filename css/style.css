@@ -9,6 +9,7 @@
 /* Reusable Code */
 body {
   font-family: "Manrope", sans-serif;
+  font-size: 18px;
 }
 
 header {
@@ -25,7 +26,12 @@ a {
 a img {
   width: 5%;
 }
-
+h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+  margin-bottom: 16px;
+}
 h2 {
   font-size: 58px;
   line-height: 76px;
@@ -33,10 +39,18 @@ h2 {
   font-weight: 800;
   margin-bottom: 34px;
 }
+
 h3 {
   font-size: 40px;
+  color: #1e1b1b;
   font-weight: 700;
   margin-bottom: 20px;
+}
+h4 {
+  font-weight: 700;
+  color: #1e1b1b;
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 .container {
   width: 90%;
@@ -46,7 +60,7 @@ h3 {
 .list-iconText-flex li {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   gap: 10px;
 }
 
@@ -76,11 +90,27 @@ h3 {
   opacity: 0.7;
   color: #1e1b1b;
 }
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  padding: 80px 0;
+  transition: all 1s ease-in-out;
+}
+.box:hover {
+  background: #ff6433;
+  color: white;
+}
 /* Header section */
 .hamburger {
   display: none;
 }
 
+.header-content p {
+  margin-bottom: 0;
+}
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -115,7 +145,7 @@ h3 {
 
 .hero-section {
   min-height: 100vh;
-  padding: 100px 0;
+  padding: 80px 0;
   justify-content: center;
   align-items: center;
 }
@@ -178,7 +208,7 @@ h3 {
   gap: 10px;
   margin-top: 15px;
 }
-/* Get Quote section */
+/*  Quote  Help section */
 .quoteHelp-section {
   padding: 90px 0;
 }
@@ -194,7 +224,7 @@ h3 {
   padding-bottom: 20px;
   width: 60%;
 }
-.quoteHelp-section .icon-box > img {
+.icon-box > img {
   width: 70%;
 }
 .line-icon {
@@ -228,18 +258,10 @@ h3 {
 }
 .whatWeOffer-boxes p {
   padding-top: 6px;
+  text-align: center;
 }
-.whatWeOffer-boxes .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: white;
-  padding: 80px 0;
-  transition: all 1s ease-in-out;
-}
-.whatWeOffer-boxes .box:nth-child(3),
-.whatWeOffer-boxes .box:hover {
+
+.whatWeOffer-boxes .box:nth-child(3) {
   background: #ff6433;
   color: white;
 }
@@ -251,24 +273,25 @@ h3 {
 }
 
 /*  Query Section*/
-.query-flex {
-  display: flex;
+
+.query-section {
+  background-image: url(../images/query-bg.png), url(../images/query-bg2.png);
+  background-repeat: no-repeat;
+  background-position: top left -20px, top right;
+  background-size: 50vw 100%, 50vw 100%;
 }
-.query-section .left-section {
-  background: url(../images/query-bg.png) no-repeat top 0 left 0 / cover;
+.query-section .container {
+  width: 80%;
 }
-.query-section .right-section {
-  background: url(../images/query-bg2.png) no-repeat top 0 left 0 / cover;
-  width: 100%;
-  min-height: 100%;
+
+.query-section h3 {
+  color: #fff;
 }
 .query-text {
-  background: #ff6433;
+  background: rgba(255, 100, 51, 0.95);
   color: white;
-  padding: 80px;
-  position: relative;
-  right: -200px;
-  width: 90%;
+  padding: 60px;
+  width: 70%;
 }
 /* Rating */
 
@@ -276,7 +299,7 @@ h3 {
   background: #f2f2f2;
   padding: 40px 0;
 }
-.rating h2 {
+.rating-grid h2 {
   color: #661ce7;
   margin: 0;
 }
@@ -303,14 +326,14 @@ h3 {
 }
 
 .testimonial {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #ccc;
 }
 
 .testimonial .testimonial-heading {
   text-align: center;
   width: 50%;
-  margin: 0 auto 100px auto ;
+  margin: 0 auto 100px auto;
 }
 
 .testimonial-flex {
@@ -333,7 +356,6 @@ h3 {
 .person-info h5 {
   font-size: 20px;
   font-weight: 600;
-
 }
 
 .directions {
@@ -342,7 +364,8 @@ h3 {
   margin-top: 30px;
 }
 
-.directions .prev-control, .directions .next-control {
+.directions .prev-control,
+.directions .next-control {
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -354,7 +377,6 @@ h3 {
   color: black;
   height: 48px;
   width: 48px;
-
 }
 
 .directions .next-control {
@@ -375,18 +397,21 @@ h3 {
   background: rgb(225, 230, 232);
 }
 
-
 .faq-section .faq-container {
   width: 50%;
   margin: 0 auto;
 }
 
+.faq-section h3 {
+  text-align: center;
+  width: 62%;
+  margin: 0 auto 30px auto;
+}
 .faq-container .faq-card {
   background: white;
   padding: 40px;
   margin-bottom: 20px;
 }
-
 
 .faq-card .faq-header {
   display: flex;
@@ -396,6 +421,7 @@ h3 {
 
 .faq-card .faq-header .faq-question {
   width: 80%;
+  margin-bottom: 0;
 }
 
 .faq-card .faq-header .faq-control {
@@ -405,14 +431,18 @@ h3 {
   justify-content: center;
   align-items: center;
   display: flex;
-  background: #FF6433;
+  background: #ff6433;
   color: white;
 }
 
 .faq-card .faq-answer p {
   width: 80%;
 }
+/* footer */
 
+footer p {
+  margin-bottom: 0;
+}
 footer .footer-top {
   background: #1e1b1be0;
   padding: 40px 0;
@@ -420,6 +450,12 @@ footer .footer-top {
 
 .footer-top .left-section h3 {
   width: 60%;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.footer-top .left-section i {
+  margin-right: 10px;
+  font-size: 24px;
 }
 .footer-top .right-section li {
   margin-bottom: 15px;
@@ -433,12 +469,10 @@ footer .footer-top {
   font-size: 20px;
 }
 
-
 footer .footer-bottom {
   background: black;
   color: white;
-  
-} 
+}
 
 .footer-top-flex {
   display: flex;
@@ -463,41 +497,279 @@ footer .footer-bottom {
   color: white;
 }
 
+@media (max-width: 920px) {
+  .header-content {
+    flex-direction: column;
+  }
+}
+
 /* tablet view */
 
 @media (max-width: 769px) {
-  .left-section h2 {
-    font-size: 32px;
+  p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 40px;
     line-height: 42px;
+    font-weight: 700;
+
     width: 90%;
   }
+  h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 54px;
+    line-height: 60px;
+  }
+  h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .header-content {
+    flex-direction: row;
+  }
+  .hamburger {
+    font-size: 30px;
+    display: block;
+    position: relative;
+  }
+  .hamburger ul {
+    display: none;
+  }
+  .hamburger:hover ul {
+    display: block;
+    background: #ff6433;
+    padding: 0 20px;
+    position: absolute;
+    right: 0;
+  }
+  .hamburger:hover ul li a {
+    display: inline-block;
+    color: #fff;
+    padding-top: 10px;
+  }
+  .hamburger:hover ul li {
+    border-bottom: 1px solid white;
+  }
+  .links-section {
+    display: none;
+  }
 
+  /* Header Section */
+
+  /* Hero section */
   .hero-flex .bottom-image,
   .hero-flex .top-image {
     display: none;
+  }
+  .hero-section {
+    min-height: 90vh;
+    padding: 70px 0 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Gray Section */
+  .gray-section .right-section {
+    align-self: center;
+  }
+  /*Quote Help Section  */
+
+  .line-icon {
+    min-height: 80px;
+  }
+  .whatWeOffer-boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Query */
+  .query-text {
+    padding: 30px;
+    width: 80%;
+  }
+  /* Testimonial section */
+  .testimonial .testimonial-heading {
+    width: 60%;
+    margin: 0 auto 70px auto;
+  }
+  .testimonial-flex .testimonial-card {
+    padding: 45px;
+  }
+  .testimonial-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .person-info h5 {
+    font-size: 18px;
+  }
+  .person-info p {
+    font-size: 15px;
+  }
+  .directions .next-control {
+    height: 55px;
+    width: 55px;
+  }
+  /* FAQ Section */
+  .faq-section .faq-container {
+    width: 65%;
+  }
+
+  .faq-container .faq-card {
+    padding: 30px;
+  }
+  /* Footer */
+
+  .footer-top-flex {
+    flex-direction: column;
+  }
+  .footer-top .left-section h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-top .left-section {
+    margin-bottom: 30px;
+  }
+
+  .footer-top .right-section li h5 {
+    font-size: 18px;
+  }
+
+  .footer-bottom ul li,
+  .footer-bottom p {
+    font-size: 14px;
   }
 }
 /* mobile view  */
 
 @media (max-width: 426px) {
-  .hamburger {
-    display: block;
+  h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0 auto 34px auto;
+    width: 100%;
   }
-
-  .links-section {
-    display: none;
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
   }
+  .width-50 {
+    width: 100%;
+  }
+  /* Header Section */
 
+  /* Hero Section */
   .hero-section {
     padding: 50px 0;
   }
-
-  .hero-flex {
+  .hero-section .hero-flex {
     flex-direction: column-reverse;
     gap: 30px;
   }
-
-  .width-50 {
+  .hero-section .orange-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  /* gray section */
+  .gray-section {
+    padding: 70px 0;
+  }
+  .grey-flex {
+    flex-direction: column;
+  }
+  .gray-section .left-section {
+    margin-bottom: 30px;
+  }
+  .list-iconText-flex li .icon-text {
+    width: 80%;
+    /* padding-left: 10px; */
+  }
+  /* quote help section */
+  .quoteHelp-flex {
+    flex-direction: column;
+  }
+  .quoteHelp-section .left-section,
+  .quoteHelp-section .left-section p {
     width: 100%;
+    padding-bottom: 25px;
+  }
+  .quoteHelp-section .list-iconText-flex li {
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+  .quoteHelp-section .right-section {
+    padding-top: 10px;
+  }
+  /* what we offer */
+  .whatWeOffer-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .whatWeOffer-boxes .box {
+    padding: 50px 0;
+    text-align: center;
+  }
+  /* query section */
+
+  .query-text {
+    padding: 25px;
+
+    width: 100%;
+  }
+  /* rating */
+  .rating {
+    padding: 30px 0;
+  }
+  .rating-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    text-align: center;
+  }
+  /* brand we serve */
+
+  .brands {
+    padding: 60px 0;
+  }
+  .brands-img-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  /* testimonial  */
+  .testimonial {
+    padding: 70px 0;
+  }
+  .testimonial .testimonial-heading {
+    width: 100%;
+    margin: 0 auto 50px auto;
+  }
+  .testimonial-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonial-flex .testimonial-card {
+    padding: 35px;
+  }
+  .person-info h5 {
+    font-size: 16px;
+  }
+  .person-info p {
+    font-size: 13px;
+  }
+  /* FAQ Section */
+  .faq-section {
+    padding: 70px 0;
+  }
+
+  .faq-section .faq-container,
+  .faq-card .faq-answer p,
+  .faq-section h3 {
+    width: 100%;
+  }
+  .faq-container .faq-card {
+    padding: 20px;
+  }
+  /* footer */
+  .footer-bottom-flex {
+    flex-direction: column;
   }
 }

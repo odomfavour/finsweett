@@ -1,0 +1,157 @@
+.about-flex {
+  display: flex;
+}
+
+/* Hero section */
+.about-hero {
+  padding: 80px 0;
+}
+.about-hero .left-section {
+  background: url(../images/about-img/about-us.png) no-repeat top 0px left 0px /
+    cover;
+  width: 35%;
+}
+
+.about-hero .right-section {
+  background: #1e1b1b;
+  color: #fff;
+  padding: 60px;
+  width: 65%;
+}
+.about-hero .right-section p,
+.step-section .left-section p {
+  margin-bottom: 30px;
+}
+/* Step Section */
+.step-section {
+  padding: 0 0 80px 0;
+}
+.step-section .left-section {
+  width: 50%;
+}
+.step-section .right-section {
+  background: url(../images/about-img/about-img2.png) no-repeat top center/
+    cover;
+  width: 50%;
+}
+
+/* Core Value */
+.coreValue-section .about-flex div {
+  padding: 60px;
+  color: #fff;
+}
+.coreValue-section h4 {
+  color: #fff;
+}
+.coreValue-section .left-section {
+  background: linear-gradient(rgba(248, 91, 41, 0.9), rgba(248, 91, 41, 0.9)),
+    url(../images/about-img/about-img2.png) no-repeat top center/ cover;
+}
+
+.coreValue-section .middle-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../images/query-bg2.png) no-repeat top center/ cover;
+}
+.coreValue-section .right-section {
+  background: linear-gradient(rgba(116, 67, 202, 0.9), rgba(116, 67, 202, 0.9)),
+    url(../images/query-bg2.png) no-repeat top center/ cover;
+}
+/* Features section */
+
+.features {
+  background: #f8f8f8;
+  padding: 80px 0;
+}
+.features h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+.features .about-flex {
+  gap: 5px;
+}
+.ft-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  margin: 40px 0;
+}
+.ft-card h5 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+/* Team Members */
+.teams {
+  padding: 80px 0;
+}
+.teams h2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.team-mem-card {
+  position: relative;
+}
+.team-mem-card img {
+  width: 100%;
+}
+.team-mem-card p {
+  font-size: 14px;
+}
+.team-mem-card .text-card {
+  background: #161616;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+/* media query */
+@media (max-width: 770px) {
+  .about-flex {
+    flex-direction: column;
+  }
+  .about-hero .right-section {
+    padding: 40px;
+    width: 100%;
+  }
+  .step-section .left-section {
+    width: 100%;
+  }
+
+  .features h2 {
+    padding-bottom: 30px;
+  }
+  .ft-card {
+    margin: 0 0 20px 0;
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .coreValue-section .about-flex div {
+    padding: 40px;
+  }
+  .team-mem-card p {
+    font-size: 10px;
+  }
+  .team-mem-card h5 {
+    font-size: 16px;
+  }
+  .team-mem-card .text-card {
+    padding: 5px;
+  }
+}
