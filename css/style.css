@@ -535,6 +535,7 @@ footer .footer-bottom {
     font-size: 30px;
     display: block;
     position: relative;
+    z-index: 1;
   }
   .hamburger ul {
     display: none;
