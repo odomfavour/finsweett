@@ -534,6 +534,25 @@ footer .footer-bottom {
   .hamburger {
     font-size: 30px;
     display: block;
+    position: relative;
+  }
+  .hamburger ul {
+    display: none;
+  }
+  .hamburger:hover ul {
+    display: block;
+    background: #ff6433;
+    padding: 0 20px;
+    position: absolute;
+    right: 0;
+  }
+  .hamburger:hover ul li a {
+    display: inline-block;
+    color: #fff;
+    padding-top: 10px;
+  }
+  .hamburger:hover ul li {
+    border-bottom: 1px solid white;
   }
   .links-section {
     display: none;
