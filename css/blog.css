@@ -144,6 +144,9 @@
   }
 }
 @media (max-width: 500px) {
+  .blog-hero .left-section {
+    height: 30vh;
+  }
   .blog-grid {
     grid-template-columns: 1fr;
   }

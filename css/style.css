@@ -524,6 +524,10 @@ footer .footer-bottom {
     font-size: 54px;
     line-height: 60px;
   }
+  h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
   .header-content {
     flex-direction: row;
   }
@@ -626,6 +630,10 @@ footer .footer-bottom {
     text-align: center;
     margin: 0 auto 34px auto;
     width: 100%;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
   }
   .width-50 {
     width: 100%;
