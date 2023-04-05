@@ -145,6 +145,9 @@
   .coreValue-section .about-flex div {
     padding: 40px;
   }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
   .team-mem-card p {
     font-size: 10px;
   }
