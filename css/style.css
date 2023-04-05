@@ -194,13 +194,16 @@ h4 {
   display: flex;
 }
 
-.grey-flex .right-section input {
+.gray-section .right-section input {
   width: 100%;
   padding: 10px 15px;
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   border-radius: 2px;
   border: none;
+}
+.gray-section .right-section .orange-btn {
+  margin-top: 10px;
 }
 
 .arrow-btn {
@@ -540,14 +543,19 @@ footer .footer-bottom {
   .hamburger ul {
     display: none;
   }
+  .header-content ul li {
+    margin-left: 0;
+  }
   .hamburger:hover ul {
     display: block;
+    /* width: 100%; */
     background: #ff6433;
     padding: 0 20px;
     position: absolute;
     right: 0;
   }
   .hamburger:hover ul li a {
+    font-size: 16px;
     display: inline-block;
     color: #fff;
     padding-top: 10px;
@@ -668,10 +676,7 @@ footer .footer-bottom {
     flex-direction: column-reverse;
     gap: 30px;
   }
-  .hero-section .orange-btn {
-    display: block;
-    margin: 0 auto;
-  }
+
   /* gray section */
   .gray-section {
     padding: 70px 0;
@@ -732,7 +737,7 @@ footer .footer-bottom {
     padding: 60px 0;
   }
   .brands-img-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   /* testimonial  */
